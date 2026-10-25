@@ -1,0 +1,16 @@
+node_modules/
+.vitepress/dist/
+.vitepress/cache/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+dist/
+build/
+target/
+.DS_Store
+
+.venv/

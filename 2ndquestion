@@ -1,0 +1,26 @@
+from collections import deque
+
+def predict_senate_winner(senate: str) -> str:
+    n = len(senate)
+    qr = deque()
+    qd = deque()
+
+    for i, party in enumerate(senate):
+        if party == 'R':
+            qr.append(i)
+        else:
+            qd.append(i)
+
+    while qr and qd:
+        r = qr.popleft()
+        d = qd.popleft()
+
+        if r < d:
+            qr.append(r + n)
+        else:
+            qd.append(d + n)
+
+    if qr:
+        return "Radiant"
+    else:
+        return "Dire"

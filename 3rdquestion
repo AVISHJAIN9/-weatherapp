@@ -1,0 +1,20 @@
+def count_above_median(nums):
+    nums.sort()
+    
+    mid_index = len(nums) // 2
+    
+    median_val = nums[mid_index] 
+
+    count = 0
+    for i in range(len(nums)): 
+        if nums[i] > median_val: 
+            count = count + 1
+
+    return count
+
+
+# Driver Code (do not modify)
+n = int(input())
+arr = list(map(int, input().split()))
+
+print(count_above_median(arr))

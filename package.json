@@ -1,0 +1,28 @@
+{
+  "name": "57-weatherapp-client",
+  "version": "1.0.0",
+  "description": "**CP & Debugging Challenge**",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs",
+    "test": "node -e \"console.log('Testing suite ready')\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AVISHJAIN9/-weatherapp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AVISHJAIN9/-weatherapp/issues"
+  },
+  "homepage": "https://github.com/AVISHJAIN9/-weatherapp#readme",
+  "devDependencies": {
+    "mermaid": "^11.17.2",
+    "vitepress": "^1.6.4",
+    "vitepress-plugin-mermaid": "^2.0.17"
+  }
+}
