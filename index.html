@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Competitive Programming & Debugging Challenge Suite</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Outfit', sans-serif; background-color: #0d1117; color: #c9d1d9; }
+    code, pre { font-family: 'JetBrains Mono', monospace; }
+  </style>
+</head>
+<body class="min-h-screen p-6 md:p-12 flex flex-col items-center">
+  <div class="max-w-4xl w-full">
+    <header class="mb-10 text-center">
+      <span class="inline-block py-1 px-3 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 mb-3">Live Challenge Suite</span>
+      <h1 class="text-3xl md:text-5xl font-bold tracking-tight text-white mb-3">Competitive Programming Sprint</h1>
+      <p class="text-slate-400 text-lg">Three algorithmic challenges: Dynamic Programming, Greedy Simulation, and Code Debugging.</p>
+    </header>
+
+    <div class="grid gap-6">
+      <!-- Task 1 -->
+      <div class="bg-slate-900/80 border border-slate-800 rounded-xl p-6 shadow-xl backdrop-blur">
+        <div class="flex items-center justify-between mb-4">
+          <span class="text-xs uppercase tracking-wider font-semibold text-sky-400 bg-sky-950/60 px-2.5 py-1 rounded">Task 1 &bull; Dynamic Programming</span>
+          <span class="text-xs text-slate-400">Medium</span>
+        </div>
+        <h2 class="text-xl font-bold text-white mb-2">House Robber Problem</h2>
+        <p class="text-slate-300 text-sm mb-4">Given an integer array <code class="text-sky-300">nums</code> representing the amount of money of each house, return the maximum amount of money you can rob tonight without alerting the police (cannot rob adjacent houses).</p>
+        <div class="bg-slate-950 p-4 rounded-lg text-sm border border-slate-800/80">
+          <p class="text-slate-400 text-xs font-mono mb-1">Example: nums = [2,7,9,3,1]</p>
+          <p class="text-emerald-400 font-mono text-xs">Output: 12 (Rob house 1 (money = 2), house 3 (money = 9) and house 5 (money = 1). Total = 2 + 9 + 1 = 12)</p>
+        </div>
+      </div>
+
+      <!-- Task 2 -->
+      <div class="bg-slate-900/80 border border-slate-800 rounded-xl p-6 shadow-xl backdrop-blur">
+        <div class="flex items-center justify-between mb-4">
+          <span class="text-xs uppercase tracking-wider font-semibold text-purple-400 bg-purple-950/60 px-2.5 py-1 rounded">Task 2 &bull; Greedy Simulation</span>
+          <span class="text-xs text-slate-400">Medium</span>
+        </div>
+        <h2 class="text-xl font-bold text-white mb-2">Predicting the Winning Party (Dota2 Senate)</h2>
+        <p class="text-slate-300 text-sm mb-4">In the world of Dota2, there are two parties: Radiant and Dire. The Senate consists of senators from both parties. Each senator can ban one senator's rights or declare victory when all remaining are from the same party.</p>
+        <div class="bg-slate-950 p-4 rounded-lg text-sm border border-slate-800/80">
+          <p class="text-slate-400 text-xs font-mono mb-1">Example: senate = "RD"</p>
+          <p class="text-purple-400 font-mono text-xs">Output: "Radiant" (The first senator from Radiant bans the next Dire senator, leaving Radiant as the winner)</p>
+        </div>
+      </div>
+
+      <!-- Task 3 -->
+      <div class="bg-slate-900/80 border border-slate-800 rounded-xl p-6 shadow-xl backdrop-blur">
+        <div class="flex items-center justify-between mb-4">
+          <span class="text-xs uppercase tracking-wider font-semibold text-amber-400 bg-amber-950/60 px-2.5 py-1 rounded">Task 3 &bull; Debugging Challenge</span>
+          <span class="text-xs text-slate-400">Debugging</span>
+        </div>
+        <h2 class="text-xl font-bold text-white mb-2">Count Elements Greater Than the Median</h2>
+        <p class="text-slate-300 text-sm mb-4">Fix flawed logic calculating the count of elements strictly greater than the statistical median in unsorted integer lists of both odd and even parity lengths.</p>
+        <div class="bg-slate-950 p-4 rounded-lg text-sm border border-slate-800/80">
+          <p class="text-slate-400 text-xs font-mono mb-1">Example: arr = [1, 3, 2, 5, 4]</p>
+          <p class="text-amber-400 font-mono text-xs">Sorted: [1, 2, 3, 4, 5] &bull; Median = 3 &bull; Elements > 3: [4, 5] &rarr; Count = 2</p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="mt-12 text-center text-xs text-slate-500">
+      <p>&copy; 2026 Competitive Programming Sprint Challenge Suite &bull; Avish Jain</p>
+    </footer>
+  </div>
+</body>
+</html>
